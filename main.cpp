@@ -6,7 +6,7 @@ using namespace std;
 int main() {
 
 	double w, min, max, sum, result, aver; int num, size = 1; vector<int> vect;
-	min = 1; max = 0; result = 0; aver = 0;
+	max = 0; result = 0; aver = 0;
 
 	size = 0;
 
@@ -29,6 +29,7 @@ int main() {
 
 		size = vect.size();
 	}
+	min = size;
 
 	for (int p = 0; p < size; p++)
 	{
@@ -70,7 +71,6 @@ int main() {
 
 	cout << "Standard deviation: " << x << endl;
 
-    cin.ignore();
 	system("pause");
 	return 0;
 
