@@ -1,6 +1,5 @@
 #include<iostream>
-#include<vector>
-#include<string>
+#include<vector>
 
 using namespace std;
 
@@ -15,14 +14,13 @@ int main() {
     vector<int> vect;
     max = 0;
     result = 0;
-    aver = 0;
-    string num;
+    aver = 0;
 
     size = 0;
 
-    while (cin >> num) // работает пока есть ввод
+    while (cin >> number) // работает пока есть ввод
     {
-        number = stoi(num);
+       
         vect.push_back(number);
 
 
