@@ -8,9 +8,9 @@ using namespace std;
 int main() {
 
 
-    double test; // один тестовый элемент, чтобы дать значения min и max
-    cin >> test;
-    double w, min = test, max = test, sum = test, result, aver; // тут возможно какие-то еще должны быть переопределены
+   
+    
+    double w, min, max, sum, result, aver;
     int number, size = 1;
     vector<int> vect;
     max = 0;
@@ -28,7 +28,7 @@ int main() {
 
         size = vect.size();
     }
-    min = size;
+    min = vect[0];
 
     for (int p = 0; p < size; p++) {
         if (vect[p] < min) {
