@@ -1,20 +1,15 @@
 #include<iostream>
-#include<vector>
-
+#include<vector>
 using namespace std;
 
-
-int main() {
-
-
-   
-    
+int main() {  
     double w, min, max, sum, result, aver;
     int number, size = 1;
     vector<int> vect;
     max = 0;
     result = 0;
-    aver = 0;
+    aver = 0;
+
 
     size = 0;
 
@@ -22,7 +17,6 @@ int main() {
     {
        
         vect.push_back(number);
-
 
         size = vect.size();
     }
@@ -64,5 +58,4 @@ int main() {
 
     cout << "Standard deviation: " << x << endl;
     cout << "" << endl;
-
 }
