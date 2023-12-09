@@ -1,9 +1,17 @@
 #include<iostream>
 #include<vector>
+#include<cmath>
+
+
 using namespace std;
 
-int main() {  
-    double w, min, max, sum, result, aver;
+
+int main() {
+
+
+
+
+    double w, min, max, sum, result, aver, v;
     int number, size = 1;
     vector<int> vect;
     max = 0;
@@ -13,10 +21,12 @@ int main() {
 
     size = 0;
 
+
     while (cin >> number) // работает пока есть ввод
     {
-       
+
         vect.push_back(number);
+
 
         size = vect.size();
     }
@@ -50,12 +60,16 @@ int main() {
 
     for (int i = 0; i < size; i++) {
         w = vect[i] - aver;
-        result -= w;
+
+        v = w * w;
+        result += v;
     }
     double resultF = result / size;
 
-    double x = resultF * resultF;
+    double x = sqrt(resultF);
 
     cout << "Standard deviation: " << x << endl;
     cout << "" << endl;
+    system("pause");
+
 }
